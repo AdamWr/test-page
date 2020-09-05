@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Test</title>
+   </head>
+   <body>
+      <a href="index.html">Back</a>  
+      <script>
+         var test = {};
+         
+         try {
+         delete window.test;
+         var test = {
+            number: 999,
+            boolean: true
+         };
+         console.log("Number = " + test.number);
+         } catch (e) {}
+          
+      </script>
+   </body>
+</html>
