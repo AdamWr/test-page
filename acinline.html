@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Test</title>
+   </head>
+   <body>
+      <script>
+         !(function () {
+         var t,
+         e = window.document;
+         
+         try {
+         (t = e.currentScript).textContent = "";
+         } catch (t) {}
+         
+         try {
+         t[parentNode][removeChild](t);
+         } catch (t) {}
+         
+         alert("test");
+         })();
+         
+      </script>
+      <script>
+         (function() {
+             alert("test1");
+         })();
+      </script>
+   </body>
+</html>
